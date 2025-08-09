@@ -1,11 +1,10 @@
 Package: stathelpR
-Title: What the Package Does (One Line, Title Case)
+Title: Creating helper functions for statistical programmers
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("sai janardhan", "swami", , "saijanardhanswami@gmail.com", role = c("aut", "cre"))
+Description: The purpose of this package is to create some helper functions for statistical programmers which will be helpful in their day to day work.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
