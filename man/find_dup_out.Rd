@@ -2,23 +2,11 @@
 % Please edit documentation in R/find_dup_out.R
 \name{find_dup_out}
 \alias{find_dup_out}
-\title{usally its  bit lengthy to check if your dataset has any duplicates and to reomve them and store them in a seperate dataset
-There isn't even a single function in whole tidyverse family or BaseR
-Inorder to to do this we need some code to remeber every single time
-so the main goal of this function is to fill that gap and make that process short simple
-by giving some useful messages to the user
-@param df A dataframe or a tibble
-@param dupout Name of the dataset as a character string in which your duplicates will be stored the default name will be 'duplicates'
-@param cleandup Name of the dataset as a charactet string in whuch only non duplicates will be stored the default name will be nodup_df}
+\title{used to check if your dataset has any duplicates if yes it can reomve them and store them in a seperate dataset}
 \usage{
 find_dup_out(df, dupout = "duplicates", cleandup = "nodup_df")
 }
 \description{
-usally its  bit lengthy to check if your dataset has any duplicates and to reomve them and store them in a seperate dataset
-There isn't even a single function in whole tidyverse family or BaseR
-Inorder to to do this we need some code to remeber every single time
-so the main goal of this function is to fill that gap and make that process short simple
-by giving some useful messages to the user
 @param df A dataframe or a tibble
 @param dupout Name of the dataset as a character string in which your duplicates will be stored the default name will be 'duplicates'
 @param cleandup Name of the dataset as a charactet string in whuch only non duplicates will be stored the default name will be nodup_df

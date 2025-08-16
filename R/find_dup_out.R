@@ -1,12 +1,10 @@
 #' used to check if your dataset has any duplicates if yes it can reomve them and store them in a seperate dataset
-
-
+#'
 #'  @param df A dataframe or a tibble
 #'  @param dupout Name of the dataset as a character string in which your duplicates will be stored the default name will be 'duplicates'
 #'  @param cleandup Name of the dataset as a charactet string in whuch only non duplicates will be stored the default name will be nodup_df
-
-
-
+#'
+#'
 #' @examples
 #' dataframe <- data.frame(apha=c("a", "a", "b", "c"), num=c(1,1,2,3), symbols=c("$", "$","8", "#"))
 #' dup_out(dataframe)
