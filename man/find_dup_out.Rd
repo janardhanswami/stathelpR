@@ -2,21 +2,45 @@
 % Please edit documentation in R/find_dup_out.R
 \name{find_dup_out}
 \alias{find_dup_out}
-\title{used to check if your dataset has any duplicates if yes it can reomve them and store them in a seperate dataset}
+\title{Check and handle duplicate rows in a dataset}
 \usage{
 find_dup_out(df, dupout = "duplicates", cleandup = "nodup_df")
 }
+\arguments{
+\item{df}{A dataframe or tibble.}
+
+\item{dupout}{A character string. The name of the dataset in which duplicates will be stored.
+The default is \code{"duplicates"}.}
+
+\item{cleandup}{A character string. The name of the dataset in which only non-duplicate rows will be stored.
+The default is \code{"nodup_df"}.}
+}
+\value{
+Creates two datasets in the global environment:
+\itemize{
+\item \code{dupout}: containing duplicate rows.
+\item \code{cleandup}: containing the dataset without duplicates.
+Also returns the cleaned dataset invisibly.
+}
+}
 \description{
-@param df A dataframe or a tibble
-@param dupout Name of the dataset as a character string in which your duplicates will be stored the default name will be 'duplicates'
-@param cleandup Name of the dataset as a charactet string in whuch only non duplicates will be stored the default name will be nodup_df
+This function checks if your dataset has any duplicate rows.
+If duplicates exist, it can remove them and store them in a separate dataset.
+}
+\note{
+Messages will be shown such as:
+\itemize{
+\item "Your dataset 'dataframe' has 1 duplicate row."
+\item "Removing them and storing the duplicates in a dataset called 'duplicates'."
+}
 }
 \examples{
-dataframe <- data.frame(apha=c("a", "a", "b", "c"), num=c(1,1,2,3), symbols=c("$", "$","8", "#"))
+dataframe <- data.frame(
+  apha = c("a", "a", "b", "c"),
+  num = c(1, 1, 2, 3),
+  symbols = c("$", "$", "8", "#")
+)
 dup_out(dataframe)
 dup_out(dataframe, "dup", "nodup")
-
-Note: Your dataset 'dataframe' has 1 duplicate rows.
-Note: Removing them and storing the duplicates in a dataset called 'duplicates'
 
 }
