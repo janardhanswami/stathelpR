@@ -1,9 +1,4 @@
-#' usally its  bit lengthy to check if your dataset has any duplicates and to reomve them and store them in a seperate dataset
-#' There isn't even a single function in whole tidyverse family or BaseR
-
-#' Inorder to to do this we need some code to remeber every single time
-#' so the main goal of this function is to fill that gap and make that process short simple
-#' by giving some useful messages to the user
+#' used to check if your dataset has any duplicates if yes it can reomve them and store them in a seperate dataset
 
 
 #'  @param df A dataframe or a tibble
