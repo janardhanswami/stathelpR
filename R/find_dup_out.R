@@ -1,19 +1,35 @@
-#' used to check if your dataset has any duplicates if yes it can reomve them and store them in a seperate dataset
+#' Check and handle duplicate rows in a dataset
 #'
-#'  @param df A dataframe or a tibble
-#'  @param dupout Name of the dataset as a character string in which your duplicates will be stored the default name will be 'duplicates'
-#'  @param cleandup Name of the dataset as a charactet string in whuch only non duplicates will be stored the default name will be nodup_df
+#' This function checks if your dataset has any duplicate rows.
+#' If duplicates exist, it can remove them and store them in a separate dataset.
 #'
+#' @param df A dataframe or tibble.
+#' @param dupout A character string. The name of the dataset in which duplicates will be stored.
+#'   The default is `"duplicates"`.
+#' @param cleandup A character string. The name of the dataset in which only non-duplicate rows will be stored.
+#'   The default is `"nodup_df"`.
+#'
+#' @return Creates two datasets in the global environment:
+#'   - `dupout`: containing duplicate rows.
+#'   - `cleandup`: containing the dataset without duplicates.
+#'   Also returns the cleaned dataset invisibly.
 #'
 #' @examples
-#' dataframe <- data.frame(apha=c("a", "a", "b", "c"), num=c(1,1,2,3), symbols=c("$", "$","8", "#"))
+#' dataframe <- data.frame(
+#'   apha = c("a", "a", "b", "c"),
+#'   num = c(1, 1, 2, 3),
+#'   symbols = c("$", "$", "8", "#")
+#' )
 #' dup_out(dataframe)
 #' dup_out(dataframe, "dup", "nodup")
 #'
-#' Note: Your dataset 'dataframe' has 1 duplicate rows.
-#' Note: Removing them and storing the duplicates in a dataset called 'duplicates'
+#' @note
+#' Messages will be shown such as:
+#' - "Your dataset 'dataframe' has 1 duplicate row."
+#' - "Removing them and storing the duplicates in a dataset called 'duplicates'."
 #'
 #' @export
+
 
 
 
