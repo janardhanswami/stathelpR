@@ -40,7 +40,7 @@ dataframe <- data.frame(
   num = c(1, 1, 2, 3),
   symbols = c("$", "$", "8", "#")
 )
-dup_out(dataframe)
-dup_out(dataframe, "dup", "nodup")
+find_dup_out(dataframe)
+find_dup_out(dataframe, "dup", "nodup")
 
 }
