@@ -72,11 +72,16 @@ similar column names (fuzzy matching).</p>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>name1 <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">20</span>, <span class="fl">25</span>, <span class="fl">30</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">col_exists</span><span class="op">(</span><span class="va">df</span>, <span class="va">name1</span><span class="op">)</span>    <span class="co"># TRUE, prints confirmation</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ✅ Variable 'name1' exists in df.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>internal error 1 in R_decompress1 with libdeflate</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> lazy-load database '/Users/saijanardhanswami.s/Library/R/arm64/4.5/library/stathelpR/R/stathelpR.rdb' is corrupt</span>
 <span class="r-in"><span><span class="fu">col_exists</span><span class="op">(</span><span class="va">df</span>, <span class="st">"age"</span><span class="op">)</span>    <span class="co"># TRUE, prints confirmation</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ✅ Variable 'age' exists in df.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>restarting interrupted promise evaluation</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>internal error 1 in R_decompress1 with libdeflate</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> lazy-load database '/Users/saijanardhanswami.s/Library/R/arm64/4.5/library/stathelpR/R/stathelpR.rdb' is corrupt</span>
 <span class="r-in"><span><span class="fu">col_exists</span><span class="op">(</span><span class="va">df</span>, <span class="va">height</span><span class="op">)</span>   <span class="co"># FALSE, suggests similar columns</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ❌ Variable 'height' does not exist in df.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>restarting interrupted promise evaluation</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>internal error 1 in R_decompress1 with libdeflate</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> lazy-load database '/Users/saijanardhanswami.s/Library/R/arm64/4.5/library/stathelpR/R/stathelpR.rdb' is corrupt</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
